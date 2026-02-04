@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 10% 8%; /* Very dark charcoal, almost black */
+    --foreground: 40 10% 95%; /* Soft off-white for readability */
+    --card: 220 10% 12%; /* Darker card background */
+    --card-foreground: 40 10% 95%;
+    --popover: 220 10% 12%;
+    --popover-foreground: 40 10% 95%;
+    --primary: 35 50% 45%; /* Sophisticated bronze */
+    --primary-foreground: 220 10% 8%; /* Dark text on bronze */
+    --secondary: 40 20% 20%; /* Muted dark gold/bronze */
+    --secondary-foreground: 40 10% 95%;
+    --muted: 220 10% 15%; /* Darker muted tones */
+    --muted-foreground: 40 5% 65%; /* Greyish cream */
+    --accent: 35 50% 45%; /* Consistent bronze for accents */
+    --accent-foreground: 40 10% 95%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 10% 98%;
+    --border: 220 10% 20%; /* Darker border */
+    --input: 220 10% 15%; /* Dark input fields */
+    --ring: 35 50% 45%; /* Bronze ring color */
+    --radius: 0.5rem;
+  }
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  @apply border-border;
+}
