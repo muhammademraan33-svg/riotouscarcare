@@ -299,6 +299,7 @@ export default defineConfig({
 		appPublicPlugin(),
 		addTransformIndexHtml
 	],
+	base: process.env.VITE_BASE_PATH || '/riotouscarcare',
 	server: {
 		cors: true,
 		headers: {
